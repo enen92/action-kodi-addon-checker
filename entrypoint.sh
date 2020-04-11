@@ -9,7 +9,7 @@ fi
 mkdir -p dist/addon-checker
 
 # create the addon zip
-git archive --output=./dist/addon-checker/addon.tar --format=tar HEAD
+git archive --output=./dist/addon-checker/addon.tar --format=tgz HEAD
 
 # extract the addon zip to the destination where the kodi-addon-checker will run
 if [ -z "$2" ]
